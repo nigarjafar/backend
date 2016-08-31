@@ -1,0 +1,89 @@
+#prices{
+    background:white;
+    padding:40px;
+    .price{
+        margin-top:60px;
+        padding-bottom:50px;
+        background:$third-color;
+        border:1px solid $fourth-color;
+        transition:background 0.4s ease;
+        h5{
+            text-transform: uppercase;
+            font-weight:300;
+            font-size:25px;
+            color:darken($second-color, 70%);
+            margin:20px;
+        }
+        div{
+            background:$fourth-color;
+            transition:background 0.4s ease;
+            padding:15px;
+            
+            span{
+                color:$main-color;
+                text-transform:uppercase;
+                &:first-child{font-size:47px;}
+                &:nth-child(2){font-size:115px;}
+                &:last-child{font-size:15px}
+            }
+        }
+        ul{
+            list-style-type:none;
+            padding:20px 50px;
+            li{
+                font-size:16px;
+                color:darken($second-color, 60%);
+                padding:15px;
+                border-bottom:1px solid darken($second-color,10%);
+                font{
+                    font-weight:700;
+                }
+                &:last-child{
+                    border:none;
+                }
+            }
+        }
+        button{
+            padding:15px 80px;
+            background:none;
+            border-radius:3px;
+            border:1px solid $main-color;
+            color:$main-color;
+            text-transform:uppercase;
+            font-weight:700;
+        }
+    }
+    .price:hover{
+        background:$main-color;
+        h5{color:white;}
+        div{
+            background:#23ADDB;
+            span{color:white;}
+        }
+        li{
+            color:white;
+            border-color:#e4e4e4;
+        }
+        button{
+            border-color:white;
+            color:white;
+             &:hover{
+                background:white;
+                color:$main-color;
+            }
+        }
+       
+    }
+    .disabled{
+        pointer-events: none;
+        opacity:0.7;
+        div{
+            span{color:darken($second-color, 40%);}
+        }
+        button{
+            border-color:darken($second-color, 50%);
+            color:darken($second-color, 40%);
+        }
+        
+    }
+}

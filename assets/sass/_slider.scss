@@ -1,0 +1,44 @@
+#slider{
+    opacity:0;
+    //jquery=>opacity:1
+    margin:245px 0;
+    transition: all 0.5s ease;
+    h1{
+        font-size:58px;
+        color:white;
+        font-weight: 300;
+        font{
+            color:$main-color;
+        }
+    }
+    h3{
+        font-size:24px;
+        font-weight:300;
+        color:white;
+        margin-bottom:35px;
+    }
+    button:nth-child(3){
+        color:white;
+        background-color:$main-color;
+        padding:15px 50px;
+        border-radius:3px;
+        border:none;
+        i{
+            margin-right: 5px;
+        }
+    }
+    button:last-child{
+        background:none;
+        border:1px solid white;
+        color:white;
+        padding:14px 25px;
+        border-radius:3px;
+        margin-left:15px;
+        transition: all 0.2s ease;
+        
+        &:hover{
+            background:white;
+            color:$main-color;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@import "variable";
+@import "navbar";
+@import "slider";
+@import "logos";
+@import "about";
+@import "features";
+@import "uptades";
+@import "prices";
+@import "awards";
+@import "feedback";
+@import "team";
+@import "startup";
+@import "footer";
+@import "animation";
+@import "responsive";
+    
+body,html{
+    height:100%;
+    background-image: url("../img/background/bg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+button{
+    text-transform:uppercase;
+}
+
+h2{
+    color:#010101;
+    text-transform:uppercase;
+    font-weight:300;
+    font-size:45px;
+    font{
+        color:$main-color;
+    }
+}
+
+p,.subtitle{
+    font-family:'Pt Sans' ,sans-serif;
+    font-size:16px;
+    line-height:25px;
+    clear:both;
+}
+
+.subtitle{
+    padding:10px 0px; 
+    width:400px;
+}
+
+
+.scrollTop{
+    color:$main-color;
+    opacity:0.7;
+    padding:6px 11px 14px;
+    height:40px;
+    background-color:#333333;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    transition:all 0.2s ease;
+    &:hover{
+        opacity:1 !important;
+    }
+    
+}
+
+

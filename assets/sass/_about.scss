@@ -1,0 +1,72 @@
+#about{
+    overflow:hidden;
+    padding-top:40px;
+    padding-bottom:100px;
+    height:auto;
+    background:white;
+    .button-group{
+        padding:0 50px;
+        button{
+            margin:30px 0px;
+            padding:19px 59px;
+            background:white;
+            color:darken($second-color, 70%);
+            border:1px solid $second-color;
+            transition:background 0.3s ease;
+        }
+        .active-button , button:hover{
+            border:none;
+            background:$main-color;
+            color:white;
+            padding:20px 60px;
+        }
+    }
+   
+    .thirdTab{
+        .col-md-4{
+            margin-top:80px;
+            padding:0 55px;
+            i{
+                color:$main-color;
+            }
+            h6{
+                text-transform:uppercase;
+                font-size:16px;
+                margin:20px 0 15px;
+            }
+        }
+    }
+    .img-div{
+        img{
+            width:555px;
+        }
+    }
+    .text-div{
+        h2{
+            font-size:34px;
+            margin-top:70px;
+        }
+        button{
+            margin: 15px 5px;
+            border:1px solid $main-color;
+            padding:14px 24px;
+            color:$main-color;
+            background:none;
+            text-transform:uppercase;
+            border-radius:3px;
+            font-weight:500;
+        }
+         .active-button , button:hover{
+            border:none;
+            background:$main-color;
+            color:white;
+            padding:15px 25px;
+        }
+    }
+    .bordered{
+        border-top:1px solid $second-color;
+    }
+    .container{
+        padding:20px 30px;
+    }
+}
